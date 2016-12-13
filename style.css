@@ -1,0 +1,77 @@
+body{margin:0; padding:0;}
+.login-form{background:#ebe9e9; padding-top:30px; width:300px;}
+.login-form h1{background:#efeeee; border-top:1px solid #b9b8b8; border-bottom:1px solid #b9b8b8; margin:0px 0 25px;  position:relative; text-align:center; height:35px;}
+.login-form h1 span{border: 3px solid #b9b8b8; padding: 10px; border-radius: 50px; width: 30px; height: 30px;
+    display: inline-block; background: #fff; position: absolute; left: 50%;
+    margin-left: -25px;
+	top:-13px;
+	z-index:9;
+}
+.login-form h1 span img{width:100%;}
+.login-form form{ padding:15px; margin:0; position:relative;}
+.login-form .form-group{position:relative;}
+.login-form .form-group span{position: absolute;
+    right: 2px;
+    top: 2px;
+    background: #efeeee;
+    border-left: 2px solid #b9b8b8;
+    width: 35px;
+    height: 36px;
+    border-radius: 0 3px 3px 0;}
+.login-form .form-group span img{padding:7px;}
+.login-form form input{margin-bottom:15px; height:40px; padding:5px; border-radius:5px; border:2px solid #b9b8b8; width:100%; position:relative; font-size:15px; color:#464444;}
+.login-form input:focus{box-shadow:none; outline:none;}
+.btn1{background-color: #87ae39; border-color: #87ae39; font-size: 20px; padding: 10px 26px !important; color:#fff; height:auto !important; width:100%; display:block; border-radius:5px; cursor:pointer;}
+
+
+.project-title > span{padding:8px 15px 8px 30px; font-size:14px; display:block; border-top:1px solid #f2f1f1; border-bottom:1px solid #f2f1f1; cursor:pointer; color:#2a2e31;}
+.login-inner{padding:30px 0 0; background:#ebe9e9; width:300px;}
+.login-inner h1{background:#efeeee; border-top:1px solid #b9b8b8; border-bottom:1px solid #b9b8b8; margin:0px 0;  position:relative; text-align:center; height:35px;}
+.login-inner h1 span{border: 3px solid #b9b8b8;
+    padding: 10px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+	top:-13px;
+	z-index:9;
+}
+.login-inner h1 span img{width:100%;}
+#myproject{padding-top:0px; position:relative;}
+#myproject ul{padding-left:0; margin:0;}
+#myproject ul > li.project-title{font-weight:bold; list-style-type:none; padding:0px; position:relative; border-bottom:1px solid #d2d2d2;}
+
+#myproject li ul.project-detail li a div{word-wrap: break-word; color:#464444; padding:3px 0; font-size:13px;}
+#myproject li ul.project-detail{display:none; z-index:100; transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+#myproject li:hover > ul.project-detail{display:block; transition: all 0.5s ease; -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;}
+#myproject ul ul li{background:#f2f1f1; padding:5px 30px; font-weight:normal; cursor:pointer; font-size:14px; list-style-type:none;}
+#myproject ul ul li a{text-decoration:none;}
+#myproject ul ul li img{vertical-align: middle; float:left;
+    padding-right: 5px;
+    margin-top: 6px;}
+#myproject ul ul li .project-link{width: 90%;
+    word-wrap: break-word;
+    display: inline-block;}
+#myproject ul li span.title-hover:before{background:url('../left-errow.png'); position:absolute; left:15px; width:5px; height:10px; display:block; content:''; top:14px;}
+#myproject ul li.project-title:hover span.title-hover:before{background:url('../down-errow.png'); position:absolute; left:10px; width:10px; height:5px; display:block; content:''; top:17px;}
+#myproject ul ul li:hover{/*background:#fff;**/}
+.login-form h1:before{height:3px; background:#b9b8b8; position:absolute; top:50%; margin-top:-1px; content:''; width:100%; left:0;}
+.login-form h1:after{height:1px; background:#efeeee; position:absolute; top:-2px; content:''; width:100%; left:0; }
+.login-form form:before{height:1px; background:#efeeee; position:absolute; top:-25px; content:''; width:100%; left:0; }
+.login-inner h1:before{height:3px; background:#b9b8b8; position:absolute; top:50%; margin-top:-1px; content:''; width:100%; left:0;}
+.login-inner h1:after{height:1px; background:#efeeee; position:absolute; top:-2px; content:''; width:100%; left:0; }
+.login-inner form:before{height:1px; background:#efeeee; position:absolute; top:-25px; content:''; width:100%; left:0; }
+#myproject:before{height:1px; background:#efeeee; position:absolute; top:0px; content:''; width:100%; left:0; }
+.login-form form input.btn1{border:none !important; transition: all 0.5s ease; color:#fff; font-size:15px;}
+.login-form form input.btn1:hover{background:#78a126; border:0px solid #b9b8b8; transition: all 0.5s ease;}
+

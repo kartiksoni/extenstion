@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+
+  "name": "Acquaint Password Manager",
+  "description": "This extension will create login",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "login.html"
+  },
+
+  "background": {
+    "persistent": false,
+    "scripts": ["jquery.min.js","background.js"]
+  },
+ 
+  "content_scripts":[
+      {
+         "all_frames":true,
+        
+         "run_at":"document_end",
+         "matches":[
+         "<all_urls>",
+            "http://*/*",
+            "https://*/*",
+            "file://*/*","https://accounts.google.com/ServiceLoginAuth" 
+
+         ],
+          "js":[
+          "project.js",
+         "jquery.min.js",
+            "popup.js",
+            "login.js"
+            
+         ],
+         "css":["style.css"]
+      }
+    ],
+  "permissions":[
+      "bookmarks","*://*/*",
+      "contextMenus",
+      "storage",
+      "tabs",
+      "activeTab",
+      //"webRequest",
+      "webRequestBlocking",
+      "http://*/*",
+      "https://*/*",
+      //"pushMessaging",
+"notifications",
+"tts"
+   ],
+   "externally_connectable": {
+  "matches": ["*://*.example.com/*"]
+}
+//"web_accessible_resources": ["project.js"]
+  //"content_security_policy": "default-src 'self' style-src 'self' 'unsafe-inline';" 
+   
+}
